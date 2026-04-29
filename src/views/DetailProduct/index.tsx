@@ -1,5 +1,5 @@
 //import    { ProductType } from "@/types/product";
-import { ProdukType } from "../../pages/types/produk.type";
+import { ProdukType } from "../../types/produk.type";
 import styles from "../DetailProduct/detailProduct.module.scss";
 
 const DetailProduct = ({ products }: { products: ProdukType}) => {

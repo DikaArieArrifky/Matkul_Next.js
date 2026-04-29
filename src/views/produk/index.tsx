@@ -1,5 +1,5 @@
 import styles from "../../pages/produk/product.module.scss";
-import { ProdukType } from "../../pages/types/produk.type";
+import { ProdukType } from "../../types/produk.type";
 
 const TampilanProduk = ({ products }: { products: ProdukType[] }) => {
   return (

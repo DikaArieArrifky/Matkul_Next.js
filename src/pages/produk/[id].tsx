@@ -2,7 +2,7 @@ import fetcher from "@/utils/swr/fetcher";
 import { useRouter } from "next/router";
 import useSWR from "swr";
 import DetailProduct from "../../views/DetailProduct";
-import { ProdukType } from "../../pages/types/produk.type";
+import { ProdukType } from "../../types/produk.type";
 
 
 const HalamanProduk = ({ product }: { product: ProdukType}) => {
