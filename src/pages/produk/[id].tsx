@@ -20,8 +20,8 @@ const HalamanProduk = ({ product }: { product: ProdukType}) => {
 export default HalamanProduk;
 
 // {ini untuk server side rendering, jadi data akan diambil saat halaman diminta, bukan saat halaman dirender di klien.}
-export async function getServerSideProps({ params }:{params: { produk: string }}) {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/produk/${params?.produk}`);
+export async function getServerSideProps({ params }: { params: { id: string } }) {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/produk/${params.id}`);
     const response = await res.json();
 
     return {
