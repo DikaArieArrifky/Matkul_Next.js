@@ -1,13 +1,5 @@
 import styles from "../../pages/produk/product.module.scss";
-
-type ProdukType = {
-    id: string;
-    name: string;
-    price: number;
-    size: string;
-    category: string;
-    image: string;
-}
+import { ProdukType } from "../../pages/types/produk.type";
 
 const TampilanProduk = ({ products }: { products: ProdukType[] }) => {
   return (
